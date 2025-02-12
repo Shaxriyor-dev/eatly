@@ -6,7 +6,7 @@ function Pricing() {
   return (
     <div>
        <div>
-          
+      
        </div>
        <Control />
       <Swiper />

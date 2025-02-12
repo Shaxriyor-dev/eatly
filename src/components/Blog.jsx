@@ -1,7 +1,7 @@
-import Queshion from "./Queshion.jsx";
-import Email from "./Email.jsx";
-import shape from "../assets/shape.png";
-import Ellipse from "../assets/Ellipse.png";
+  import Queshion from "./Queshion.jsx";
+  import Email from "./Email.jsx";
+  import shape from "../assets/shape.png";
+  import Ellipse from "../assets/Ellipse.png";
 import foos from "../assets/foos.png";
 import loas from "../assets/loas.png";
 import erons from "../assets/erons.png";

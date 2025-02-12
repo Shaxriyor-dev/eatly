@@ -1,6 +1,7 @@
 // import React from "react";
 import ops from "../assets/ops.png";
 import * as React from "react";
+import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -12,11 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Material from "./Material";
 
-const options = [
-  "This month",
-  "Vegateabes",
-  "Mall",
-];
+const options = ["This month", "Vegateabes", "Mall"];
 
 function Control() {
   const [open, setOpen] = React.useState(false);
@@ -51,7 +48,13 @@ function Control() {
           Dashboard
         </p>
         <div className="my-10">
-          <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }} // Boshlang'ich holat
+            animate={{ opacity: 1, y: 0 }} // Animatsiya tugash holati
+            transition={{ duration: 0.8, ease: "easeOut" }} // Animatsiya tezligi va uslubi
+            className=""
+          >
+             <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
             <div>
               <img src={ops} alt="" />
             </div>
@@ -63,7 +66,14 @@ function Control() {
             </div>
             <p className="text-[14px] text-[#ACADB9]">3:09 PM</p>
           </div>
-          <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }} // Boshlang'ich holat
+            animate={{ opacity: 1, y: 0 }} // Animatsiya tugash holati
+            transition={{ duration: 0.8, ease: "easeOut" }} // Animatsiya tezligi va uslubi
+            className=""
+          >
+             <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
             <div>
               <img src={ops} alt="" />
             </div>
@@ -75,7 +85,14 @@ function Control() {
             </div>
             <p className="text-[14px] text-[#ACADB9]">3:09 PM</p>
           </div>
-          <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }} // Boshlang'ich holat
+            animate={{ opacity: 1, y: 0 }} // Animatsiya tugash holati
+            transition={{ duration: 0.8, ease: "easeOut" }} // Animatsiya tezligi va uslubi
+            className=""
+          >
+             <div className="h-[89px] w-[346px] bg-[#fff] shadow-xl rounded-[12px] flex items-center justify-evenly gap-3.5 my-6">
             <div>
               <img src={ops} alt="" />
             </div>
@@ -87,19 +104,26 @@ function Control() {
             </div>
             <p className="text-[14px] text-[#ACADB9]">3:09 PM</p>
           </div>
+          </motion.div>
         </div>
       </div>
       <div className="h-[477px] w-[530px] bg-[#fff] rounded-[23px]  p-[40px]  ">
         <div className=" gap-10 flex items-center justify-evenly">
-          <p className="text-[28px] text-[#1A202C] font-[poppins] font-bold">Purchases</p>
-          <React.Fragment sx={{background : '#6C5FBC'}}>
-            <ButtonGroup sx={{width : '168px' , background : '#6C5FBC'}}
+          <p className="text-[28px] text-[#1A202C] font-[poppins] font-bold">
+            Purchases
+          </p>
+          <React.Fragment sx={{ background: "#6C5FBC" }}>
+            <ButtonGroup
+              sx={{ width: "168px", background: "#6C5FBC" }}
               variant="contained"
               ref={anchorRef}
               aria-label="Button group with a nested menu"
             >
-              <Button sx={{background : '#6C5FBC'}} onClick={handleClick}>{options[selectedIndex]}</Button>
-              <Button  sx={{background : '#6C5FBC'}}
+              <Button sx={{ background: "#6C5FBC" }} onClick={handleClick}>
+                {options[selectedIndex]}
+              </Button>
+              <Button
+                sx={{ background: "#6C5FBC" }}
                 size="small"
                 aria-controls={open ? "split-button-menu" : undefined}
                 aria-expanded={open ? "true" : undefined}
@@ -150,7 +174,7 @@ function Control() {
           </React.Fragment>
         </div>
         <div className="p-[20px]">
-           <Material/>
+          <Material />
         </div>
       </div>
     </div>
