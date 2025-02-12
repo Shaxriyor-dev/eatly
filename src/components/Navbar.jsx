@@ -1,6 +1,6 @@
 import * as React from "react";
 import Logo from "../assets/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -16,30 +16,30 @@ function Navbar() {
               eatly
             </a>
             <ul className="flex align-middle-center gap-16">
-              <Link
-                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+              <NavLink
+                className={({isActive})=>isActive ? 'text-blue-500 text-[17.83px] duration-300' : 'text-[17.83px] text-[#606060] hover:text-blue-500 duration-300'}
                 to="/menu"
               >
                 Menu
-              </Link>
-              <Link
-                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+              </NavLink>
+              <NavLink
+                className={({isActive})=>isActive ? 'text-blue-500 text-[17.83px] duration-300' : 'text-[17.83px] text-[#606060] hover:text-blue-500 duration-300'}
                 to="/blog"
               >
                 Blog
-              </Link>
-              <Link
-                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+              </NavLink>
+              <NavLink
+                className={({isActive})=>isActive ? 'text-blue-500 text-[17.83px] duration-300' : 'text-[17.83px] text-[#606060] hover:text-blue-500 duration-300'}
                 to="/pricing"
               >
                 Pricing
-              </Link>
-              <Link
-                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+              </NavLink>
+              <NavLink
+                className={({isActive})=>isActive ? 'text-blue-500 text-[17.83px] duration-300' : 'text-[17.83px] text-[#606060] hover:text-blue-500 duration-300'}
                 to="/contact"
               >
                 Contact
-              </Link>
+              </NavLink>
             </ul>
           </div>
 
