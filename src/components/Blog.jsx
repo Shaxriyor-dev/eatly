@@ -1,7 +1,6 @@
-import React from "react";
 import Queshion from "./Queshion.jsx";
 import Email from "./Email.jsx";
-import Images from "../assets/images.png";
+import shape from "../assets/shape.png";
 import Ellipse from "../assets/Ellipse.png";
 import foos from "../assets/foos.png";
 import loas from "../assets/loas.png";
@@ -23,7 +22,7 @@ function Blog() {
         <div className="flex justify-center items-center flex-wrap p-[70px] gap-[60px]">
           <div className="h-[445px] w-[350px] bg-[#fff] rounded-2xl p-[20px] shadow-xl">
             <div className="flex justify-center">
-              <img src={Images} alt="" />
+              <img src={shape} alt="shape" />
             </div>
             <p className="text-[22px] text-[#252525] font-medium p-1.5">
               How To Order Food ?
@@ -167,7 +166,7 @@ function Blog() {
           </div>
           <div className="h-[445px] w-[350px] bg-[#fff] rounded-2xl p-[20px] shadow-xl">
             <div className="flex justify-center">
-              <img src={Images} alt="" />
+              <img src={shape} alt="" />
             </div>
             <p className="text-[22px] text-[#252525] font-medium p-1.5">
               How To Order Food ?
