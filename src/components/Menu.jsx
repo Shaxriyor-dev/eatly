@@ -9,7 +9,7 @@ import Image from "../assets/Image.png";
 import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Food from "../assets/food.png";
+import foodImg from "../assets/foodImg.png";
 import lop from "../assets/lop.png";
 import Searchs from "../assets/Search.png";
 import Meet from "../components/Meet.jsx";
@@ -260,7 +260,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-amber-100 rounded-[8px] text-[#ffb700]">
                 Healthy
@@ -293,7 +293,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-[#F7C5BA] rounded-[8px] text-[#ff0000]">
                 Healthy
@@ -326,7 +326,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[63px] bg-[#33AC64] rounded-[8px] text-[#00ff1e]">
                 Supreme
@@ -359,7 +359,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-amber-100 rounded-[8px] text-[#ffb700]">
                 Healthy
@@ -392,7 +392,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-[#F7C5BA] rounded-[8px] text-[#ff0000]">
                 Healthy
@@ -427,7 +427,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-amber-100 rounded-[8px] text-[#ffb700]">
                 Healthy
@@ -460,7 +460,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-[#F7C5BA] rounded-[8px] text-[#ff0000]">
                 Healthy
@@ -493,7 +493,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[63px] bg-[#33AC64] rounded-[8px] text-[#00ff1e]">
                 Supreme
@@ -526,7 +526,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-amber-100 rounded-[8px] text-[#ffb700]">
                 Healthy
@@ -559,7 +559,7 @@ function Menu() {
                 />
               </div>
               <div className="flex justify-center">
-                <img src={Food} alt="" />
+                <img src={foodImg} alt="" />
               </div>
               <button className="h-[25px] w-[60px] bg-[#F7C5BA] rounded-[8px] text-[#ff0000]">
                 Healthy

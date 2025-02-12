@@ -4,7 +4,7 @@ import Checkbox from "@mui/material/Checkbox";
 import StarIcon from "@mui/icons-material/Star";
 import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
-import Food from "../assets/food.png";
+import Food from "../assets/foodImg.png";
 import lop from "../assets/lop.png";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 

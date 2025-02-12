@@ -9,7 +9,7 @@ import Image from "../assets/Image.png";
 import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Food from "../assets/food.png";
+import Food from "../assets/foodImg.png";
 import lop from '../assets/lop.png';
 import { useNavigate } from "react-router-dom";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
