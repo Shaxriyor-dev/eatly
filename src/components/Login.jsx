@@ -6,8 +6,25 @@ import g from "../assets/G.png";
 import pa from "../assets/pa.png";
 import { Link } from "react-router-dom";
 import imsga from "../assets/imga.png";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Login() {
+    const [login, setLogin] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+  
+    const handleClick = () => {
+      if (login === 'admin' && password === '123456') {
+        setTimeout(()=>{
+          navigate('/');
+        } , 1000);
+          login.style.border = 'lime';
+          password.style.border = 'lime';
+      } else {
+        alert('Xato password yoki loginingiz!');
+      }
+    };
   return (
     <div className="h-[100vh] flex justify-center items-center bg-white">
       <div className="h-screen w-[100%] flex justify-center items-center">
@@ -18,7 +35,7 @@ function Login() {
           <div className="flex justify-center m-3">
             <Box sx={{ "& button": { m: 1 } }}>
               <div>
-                <Button
+                <Button onClick={()=> window.location.href = 'https://www.google.com'}
                   sx={{
                     background: "#F5F5F5",
                     boxShadow: "none",
@@ -31,7 +48,7 @@ function Login() {
                 >
                   <img src={g} alt="" />
                 </Button>
-                <Button
+                <Button onClick={()=> window.location.href = 'https://www.apple.com'}
                   sx={{
                     background: "#F5F5F5",
                     boxShadow: "none",
@@ -48,7 +65,7 @@ function Login() {
             </Box>
           </div>
           <div className="flex justify-center align-center flex-wrap m-4">
-            <TextField
+            <TextField  onChange={(e) => setLogin(e.target.value)}
               variant="outlined"
               placeholder="Email"
               sx={{
@@ -65,7 +82,7 @@ function Login() {
                 },
               }}
             />
-            <TextField
+            <TextField  onChange={(e) => setPassword(e.target.value)}
               variant="outlined"
               placeholder="Password"
               sx={{
@@ -83,7 +100,7 @@ function Login() {
               }}
             />
             <Box sx={{ "& button": { m: 7 } }}>
-              <Button  onClick={()=> window.location.pathname = '/'}
+              <Button  onClick={handleClick}
                 sx={{
                   width: "382px",
                   padding: "17px",
