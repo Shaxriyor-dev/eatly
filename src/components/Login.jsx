@@ -9,7 +9,7 @@ import imsga from "../assets/imga.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Login({ setAuth }) {
+function Login() {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
@@ -17,8 +17,7 @@ function Login({ setAuth }) {
     const handleClick = () => {
       if (login === 'admin' && password === '123456') {
         setTimeout(()=>{
-          setAuth(true); 
-          navigate("/"); 
+          navigate('/');
         } , 1000);
           login.style.border = 'lime';
           password.style.border = 'lime';
